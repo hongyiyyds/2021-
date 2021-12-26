@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小周商城</title>
+	<link rel="stylesheet" type="text/css" href="css文件/bootstrap.min.css">
+	<link rel="stylesheet" href="css文件/font-awesome.min.css">
+	<script src="js文件/jquery.js"></script>
+	<script src="js文件/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css文件/mall.css">
+</head>
+<body>
+	<!-- 顶部导航条 -->
+	<div class="nav">
+		<ul>
+			<li class="nav-pull-down location"><img src="img/小周地点标识符号乖巧小老妹.jpg"> 全国送达</li>
+			<li><a href="小周商城.html">商城</a></li>
+			<li><a href="小周商城.html">网站导航</a></li>
+			<li><a href="客户服务.html">商城会员服务</a></li>
+			<li><a href="购物车.html">购物车</a></li>
+			<li><a href="用户反馈.html">反馈</a></li>
+			<li><a href="客户服务.html">客户服务</a></li>
+			<li class="nav-pull-down my-shop"><a href="小周商城.html">我的商城</a> <span class="glyphicon glyphicon-menu-down"></span></li>
+			<li class="login-signup">你好，请<a href="登陆页面.html">登录 </a><span class="text-color-red"><a href="注册页面.html">免费注册</a></span></li>
+		</ul>
+	</div>
+	<!-- 内容主题 -->
+	<div class="container">
+		<!-- 搜索框 -->
+		<div class="search">
+			<div class="search-body">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="输入你想要的商品">
+					<span class="input-group-btn">
+						<a href="搜索页面.html"><button class="btn btn-danger btn-search" type="button"><i class="fa fa-search"></i></button></a>
+					</span>
+				</div>
+				<div class="search-keyword">
+					<p>辣条限时特惠</p>
+				</div>
+			</div>
+		</div>
+		<!-- 横向导航 -->
+		<div class="nav-item">
+			<ul>
+				<li><a href="小周商城.html">辣条</a></li>
+				<li><a href="#">优惠券</a></li>
+			</ul>
+		</div>
+		<div class="nav-body">
+			<!-- 侧边导航 -->
+			<div class="nav-side">
+				<ul>
+					<li><span class="nav-side-item">辣条</span></li>
+				</ul>
+			</div>
+			<div class="nav-content">
+				<!-- 幻灯片 -->
+				<div class="slide">
+					<img class="carousel_img" src="img/小周商城页面图片/主页辣条图1.jpg" name="1">
+					<img class="carousel_img" src="img/小周商城页面图片/主页辣条图2.jpg" name="2">
+					<img class="carousel_img" src="img/小周商城页面图片/主页辣条图3.jpg" name="3">
+					<img class="carousel_img" src="img/小周商城页面图片/主页辣条图4.jpg" name="4">
+					<img class="carousel_img" src="img/小周商城页面图片/主页辣条图5.jpg" name="5">
+					<div class="icon">
+						<i name="1" class="fa fa-circle"></i>
+						<i name="2" class="fa fa-circle"></i>
+						<i name="3" class="fa fa-circle"></i>
+						<i name="4" class="fa fa-circle"></i>
+						<i name="5" class="fa fa-circle"></i>
+					</div>
+					<div class="prev prevNext" onclick="PrevNextClick(1)"> <span class="glyphicon glyphicon-menu-left"></span> </div>
+					<div class="next prevNext" onclick="PrevNextClick(2)"> <span class="glyphicon glyphicon-menu-right"></span> </div>
+				</div>
+				<div class="nav-show">
+					<div class="nav-show-img"><img src="img/小周商城页面图片/主页下方辣条图1.jpg"></div>
+					<div class="nav-show-img"><img src="img/小周商城页面图片/主页下方辣条图2.jpg"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 商品显示区域 -->
+		<div class="content">
+			<!-- 秒杀 -->
+			<div class="seckill">
+				<!-- 头部 -->
+				<div class="seckill-head">
+					<div class="seckill-icon">
+						<img src="img/clock.png">
+					</div>
+					<div class="seckill-text">
+						<span class="seckill-title">限时特价</span>
+						<span class="seckill-remarks">机不可失，失不再来</span>
+					</div>
+					<div class="count-down">
+						<span class="count-down-text">当前场次</span>
+						<span class="count-down-num count-down-hour">00</span>
+						<span class="count-down-point">:</span>
+						<span class="count-down-num count-down-minute">56</span>
+						<span class="count-down-point">:</span>
+						<span class="count-down-num count-down-seconds">00</span>
+						<span class="count-down-text">后结束抢购</span>
+					</div>
+				</div>
+				<!-- 内容 -->
+				<div class="seckill-content">
+					<div class="seckill-item">
+						<div class="seckill-item-img">
+							<img src="img/小周商城页面图片/大辣棒赠品.jpg">
+						</div>
+						<div class="seckill-item-info">
+							<p>【赠辣条】卫龙 大辣棒*3</p>
+							<p><i class="fa fa-rmb text-danger"></i><span class="seckill-price text-danger">0.0</span><i class="fa fa-rmb"></i><span class="seckill-old-price"></span><s>9.9</s></p>
+						</div>
+					</div>
+					<div class="seckill-item">
+						<div class="seckill-item-img">
+							<img src="img/小周商城页面图片/小米锅巴.jpg">
+						</div>
+						<div class="seckill-item-info">
+							<p>卫龙小米锅巴(麻辣65g×9）</p>
+							<p><i class="fa fa-rmb text-danger"></i><span class="seckill-price text-danger">32.6</span><i class="fa fa-rmb"></i><span class="seckill-old-price"></span><s>35.6</s></p>
+						</div>
+					</div>
+					<div class="seckill-item">
+						<div class="seckill-item-img">
+							<img src="img/小周商城页面图片/卤蛋.jpg">
+						</div>
+						<div class="seckill-item-info">
+							<p>卫龙78°卤蛋【35g×10】</p>
+							<p><i class="fa fa-rmb text-danger"></i><span class="seckill-price text-danger">29.0</span><i class="fa fa-rmb"></i><span class="seckill-old-price"></span><s>34.0</s></p>
+						</div>
+					</div>
+					<div class="seckill-item">
+						<div class="seckill-item-img">
+							<img src="img/小周商城页面图片/蛋糕.jpg">
+						</div>
+						<div class="seckill-item-info">
+							<p>小周独家蛋糕定制【6寸】</p>
+							<p><i class="fa fa-rmb text-danger"></i><span class="seckill-price text-danger">168.0</span><i class="fa fa-rmb"></i><span class="seckill-old-price"></span><s>188.0</s></p>
+						</div>
+					</div>
+					<div class="seckill-item">
+						<div class="seckill-item-img">
+							<img src="img/小周商城页面图片/饼干.jpg">
+						</div>
+						<div class="seckill-item-info">
+							<p>小周独家饼干定制【10块】</p>
+							<p><i class="fa fa-rmb text-danger"></i><span class="seckill-price text-danger">29.9</span><i class="fa fa-rmb"></i><span class="seckill-old-price"></span><s>35.9</s></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 电脑专场 -->
+			<div class="item-class">
+				<div class="item-class-head">
+					<span class="item-class-title">辣条</span>
+					<ul>
+						<li><a href="商品详情.html">卫龙大辣棒</a></li>
+						<li><a href="商品详情.html">卫龙小辣棒</a></li>
+						<li><a href="商品详情.html">卫龙魔芋爽</a></li>
+						<li><a href="商品详情.html">卫龙小面筋</a></li>
+						<li><a href="商品详情.html">卫龙大面筋</a></li>
+						<li><a href="商品详情.html">卫龙亲嘴烧</a></li>
+						<li><a href="商品详情.html">卫龙风吃海带</a></li>
+						<li><a href="商品详情.html">卫龙小米锅巴</a></li>
+						<li><a href="商品详情.html">卫龙火药辣棒</a></li>
+					</ul>
+				</div>
+				<div class="item-class-content">
+					<div class="item-content-top">
+						<div class="item-big-img">
+							<img src="img/小周商城页面图片/10.gif" alt="">
+						</div>
+						<div class="item-four-img">
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit">大辣棒</p>
+									<p class="pt_bi_promo">消费满99送大辣棒*3包</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/11.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit">平台辣条</p>
+									<p class="pt_bi_promo">满199-15</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/12.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit">平台方便面</p>
+									<p class="pt_bi_promo">跨店满减<br>99-10</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/13.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit">其他商品</p>
+									<p class="pt_bi_promo">部分限时9折</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/14.gif" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-content-bottom">
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片1.jpg">
+						</div>
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片2.jpg">
+						</div>
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片3.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="item-class-content">
+					<div class="item-content-top">
+						<div class="item-big-img">
+							<img src="img/小周商城页面图片/17.gif" alt="">
+						</div>
+						<div class="item-four-img">
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit">大面筋</p>
+									<p class="pt_bi_promo">满10送1</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/18.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit">大辣棒</p>
+									<p class="pt_bi_promo">满10送1</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/19.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit">亲嘴烧</p>
+									<p class="pt_bi_promo">满20送3</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/20.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit">小米锅巴</p>
+									<p class="pt_bi_promo">满10送1</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/21.gif" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-content-bottom">
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片4.jpg">
+						</div>
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片5.jpg">
+						</div>
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片6.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 爱吃专场 -->
+			<div class="item-class">
+				<div class="item-class-head item-class-eat-head">
+					<span class="item-class-title">最爱方便面</span>
+					<ul>
+						<li><a href="商品详情.html">康师傅红烧牛肉面</a></li>
+						<li><a href="商品详情.html">康师傅香辣牛肉面</a></li>
+						<li><a href="商品详情.html">康师傅老坛酸菜面</a></li>
+						<li><a href="商品详情.html">康师傅藤椒牛肉面</a></li>
+						<li><a href="商品详情.html">康师傅鲜虾鱼板面</a></li>
+						<li><a href="商品详情.html">康师傅卤香牛肉面</a></li>
+						<li><a href="商品详情.html">汤达人日式豚骨拉面</a></li>
+						<li><a href="商品详情.html">汤达人酸酸辣辣豚骨拉面</a></li>
+						<li><a href="商品详情.html">汤达人味噌拉面</a></li>
+						<li><a href="商品详情.html">汤达人海鲜拉面</a></li>
+						<li><a href="商品详情.html">汤达人韩式辣牛肉拉面</a></li>
+
+					</ul>
+				</div>
+				<div class="item-class-content">
+					<div class="item-content-top">
+						<div class="item-big-img">
+							<img src="img/小周商城页面图片/28.gif" alt="">
+						</div>
+						<div class="item-four-img">
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit pt_bi_tit-eat">各类方便面</p>
+									<p class="pt_bi_promo">买5赠1</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/22.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit pt_bi_tit-eat">跨店可满减</p>
+									<p class="pt_bi_promo">99-10</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/23.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit pt_bi_tit-eat">会员专享</p>
+									<p class="pt_bi_promo" 第二件半价</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/24.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit pt_bi_tit-eat">美味泡面</p>
+									<p class="pt_bi_promo">其他口味可以联系客服</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/25.gif" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-content-bottom">
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片7.jpg">
+						</div>
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片8.jpg">
+						</div>
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片9.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="item-class-content">
+					<div class="item-content-top">
+						<div class="item-big-img">
+							<img src="img/小周商城页面图片/33.gif" alt="">
+						</div>
+						<div class="item-four-img">
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit pt_bi_tit-eat">酸辣粉</p>
+									<p class="pt_bi_promo">应有尽有</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/27.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit pt_bi_tit-eat">方便生活</p>
+									<p class="pt_bi_promo">选择小周商城</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/29.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit pt_bi_tit-eat">汤达人特惠</p>
+									<p class="pt_bi_promo">海鲜口味75折</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/30.gif" alt="">
+								</div>
+							</div>
+							<div class="item-four-detail">
+								<div class="item-four-detail-text">
+									<p class="pt_bi_tit pt_bi_tit-eat">康师傅特惠</p>
+									<p class="pt_bi_promo">红烧牛肉面75折</p>
+								</div>
+								<div class="item-four-detail-img">
+									<img src="img/小周商城页面图片/31.gif" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-content-bottom">
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片10.jpg">
+						</div>
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片11.jpg">
+						</div>
+						<div class="item-content-bottom-img">
+							<img src="img/小周商城页面图片/下方图片12.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 清除浮动 -->
+	<div class="clearfix"></div>
+	<!-- 底部 -->
+	<footer class="footer">
+		<div class="clearfix"></div>
+		<div class="icon-row">
+			<div class="footer-icon">
+				<h5 class="footer-icon-child"></h5>
+				<span class="footer-icon-text">种类丰富，任君挑选</span>
+			</div>
+			<div class="footer-icon">
+				<h5 class="footer-icon-child footer-icon-child-2"></h5>
+				<span class="footer-icon-text">品质保证，绝无假货</span>
+			</div>
+			<div class="footer-icon">
+				<h5 class="footer-icon-child footer-icon-child-3"></h5>
+				<span class="footer-icon-text">限时优惠，不要错过</span>
+			</div>
+			<div class="footer-icon">
+				<h5 class="footer-icon-child footer-icon-child-4"></h5>
+				<span class="footer-icon-text">全国包邮，量多从优</span>
+			</div>
+		</div>
+		<div class="service-intro">
+			<div class="servece-type">
+				<div class="servece-type-info">
+					<ul>
+						<li>购物指南</li>
+						<li>购物流程</li>
+						<li>会员介绍</li>
+						<li>常见问题</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="servece-type-info">
+                    <ul>
+                        <li>配送方式</li>
+                        <li>全国邮寄配送</li>
+                        <li>配送服务查询</li>
+                    </ul>
+				</div>
+				<div class="servece-type-info">
+					<ul>
+						<li>支付方式</li>
+						<li>货到付款</li>
+						<li>在线支付</li>
+						<li>分期付款</li>
+					</ul>
+				</div>
+				<div class="servece-type-info">
+					<ul>
+						<li>售后服务</li>
+						<li>售后政策</li>
+						<li>退款说明</li>
+						<li>取消订单</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="friend-link">
+				<div class="friend-link-item">
+					<ul>
+						<li><span class="link-item">关于我们</span></li>
+						<li><span class="link-item">联系我们</span></li>
+						<li><span class="link-item">联系客服</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="copyright">
+				<p>Copyright © 2021 BY 华工201966345147周鸿毅</p>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="js文件/mall.js"></script>
+</html>
